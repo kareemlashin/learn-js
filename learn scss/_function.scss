@@ -1,0 +1,21 @@
+ // todo @function @return
+
+ @function function-name($args) {  
+     @return $args/5;  
+    }
+
+    .col{
+         font-size: function-name((100px));
+    }
+
+
+
+
+
+
+    @function make-greener($value) {
+     @return   $value;// arithmetic with colors is totally fine, btw
+ }
+ p {
+     background: make-greener(gray);
+ }

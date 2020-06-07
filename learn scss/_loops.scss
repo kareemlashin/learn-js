@@ -1,0 +1,58 @@
+// todo @loops
+
+@for $i from 1 through 5{
+     li:nth-child(#{$i}) .num{
+         background-position: (-($i - 1)*40px) -55px; 
+         }
+     }
+      $num: 4;
+     
+     @while $num > 0 {
+         .module-#{$num} {
+             content: "#{$num}";
+         }
+     
+         $num: $num - 1;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     @for $i from 1 to 4 {  
+          .p#{$i} { padding-left : $i * 10px; }  
+        }   
+
+        @for $i from 1 through 10 {
+          .foo:nth-of-type(#{$i}) {
+            border-color: hsl($i * 36, 50%, 50%);
+          }
+        }
+
+
+        @each $name in 'save' 'cancel' 'help' {
+          .icon-#{$name} {
+              background-image: url('/images/#{$name}.png');
+          }
+      }

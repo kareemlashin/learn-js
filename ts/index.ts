@@ -1,108 +1,53 @@
 //? tsc filename.ts
 // tsc filename.ts --watch
+/*
+Boolean
+Number
+String
+Array
+Enum
+Any
+Null 
+Undefined
+Object
 
-// function(param:type=value)
-function add(x:number=6, y:number=6) {
-	return x+y;
+*/
+let decimalValue: number = 10;
+let hexaDecimalValue: number = 0xf10b;
+let binaryValue: number = 0b110100;
+let octalValue: number = 0o410;
+
+let firstName: string = "Kunal"; // using double quotes
+let lastName: string = 'Chowdhury'; // using single quotes
+
+let isPrimaryAccount: boolean = true;
+let hasCards: boolean = false;
+
+let nullValue: null = null;
+
+let undefinedValue: undefined = undefined;
+
+let dynamicValue: any = "Kunal Chowdhury";
+
+
+function name_string(name: string="kareem") {
+  return name;
 }
 
-let sum:any = add(5,10);
-let sum2:any = add();
-console.log(sum);
-console.log(sum2);
+let marks: number[] = [80, 85, 75];
+let marks2: Array<number> = [80, 85, 75];
+let person: [string, number] = ["Kunal", 2018];
+let data_person: [string, number,number] = ["Kunal", 2018, 21];
 
-//Number
-let a :number = 10;
-let marks :number = 150;
-let price :number = 10.2;
-
-//String
-let str :string = "hello world";
-
-//Boolean
-
-let bflag :boolean = false;
-let statu: boolean = true;
-let years: Array<number> = [ 2016, 2017, 2018, 2019]; 
-for (let  i of years) {
-     console.log(i)
+enum colors{
+  red="#999",
+  black="#909",
+  white="#631",
+  yellow="#952",
 }
+console.log(colors.black)
 
-let months: Array<string> = ["Jan", "Feb", "March", "April", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"]; //array with all string values.
-for (let  i of months) {
-  console.log(i)
+//void
+function warnUser(): void {
+  console.log("This is my warning message");
 }
-
-console.log(months.length);  // 12
-
-class Students {
-  age : number;
-  name : string;
-  roll_no : number;
-  
-  constructor(age: number, name:string, roll_no: number) {
-      this.age = age;
-      this.name = name;
-      this.roll_no = roll_no;
-  }
-
-  getRollNo(): number {
-      return this.roll_no;
-  }
-
-  getName() : string {
-      return this.name;
-  }
-
-  getAge() : number {
-      return this.age;
-  }
-} 
-let student_details = new Students(15, "Harry John", 33);
-student_details.getAge(); // 15
-student_details.getName(); // Harry John
-
-class Person {
-  name: string;
-  age: number;
-
-  constructor(name: string, age: number) {
-      this.name = name;
-      this.age = age;
-  }
-
-  getName(): string {
-      return this.name;
-  }
-
-  getAge(): number {
-      return this.age;
-  }
-}
-
-class Student extends Person {
-  tmarks: number;
-  getMarks(): number {
-      return this.tmarks;
-  }
-
-  setMarks(tmarks) {
-      this.tmarks = tmarks;
-  }
-}
-
-let _std1 = new Student('Sheena', 24);
-_std1.getAge(); // output is 24
-_std1.setMarks(500);
-_std1.getMarks(); // output is 500
-
-interface Dimension {
-  width: string;
-  height: string;
-}
-
-
-let _imagedim: Dimension = {
-  width: "100px",
-  height: "200px"
-};

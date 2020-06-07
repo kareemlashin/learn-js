@@ -161,3 +161,6 @@ $( "li" ).hover(
          }
      });
  });
+ $(selector).removeClass('nameClass')
+  $(selector).addClass('nameClass')
+    $('div.chapter a').attr({rel: 'external',title: 'Learn more at Wikipedia'});

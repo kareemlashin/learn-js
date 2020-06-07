@@ -10,3 +10,4 @@ firstHeading.classList.remove('foo', 'bar');
 firstHeading.classList.toggle('visible');
 
 console.log(firstHeading.classList.contains('foo'))
+//replace

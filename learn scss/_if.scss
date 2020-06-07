@@ -1,0 +1,38 @@
+//todo @ if else  @else if  
+
+$test: 3;
+
+p {
+  @if $test > 3 {
+        color: red;
+    } @else if $test < 3 {
+        color: blue;
+    } @else if $test == 3 {
+        color: white;
+    }
+}
+
+$type: monster;  
+p {  
+  @if $type == ocean {  
+    color: blue;  
+  } @else if $type == matador {  
+    color: red;  
+  } @else if $type == monster {  
+    color: green;  
+  } @else {  
+    color: black;  
+  }  
+}  
+
+
+
+$debug: false; // TODO: move to _settings.scss
+
+article {
+    color: black;
+
+    @if ($debug) { // visualizing layout internals
+        border: 1px dotted red;
+    }
+}

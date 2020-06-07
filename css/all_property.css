@@ -1,0 +1,293 @@
+.box-sizing {
+     box-sizing: border-box;
+}
+
+[dir='rtl'] {
+     color: green;
+     direction: rtl;
+}
+
+[dir='ltr'] {
+     color: red;
+     direction: ltr;
+}
+
+.light p {
+     color: red;
+}
+
+.dark p {
+     color: yellow;
+}
+
+.background {
+     background-image: url(../../2.PNG);
+     background-position: center 50%;
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-color: #fff;
+     /*Backgrounds
+----------------------------------------
+background-image:url(path/img);
+background-position:place % position;
+background-size:cover;
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-color:#color;
+*/
+}
+
+.Border {
+     /*border:width px type #color*/
+     border: 1px solid #aaa;
+     border-bottom: 1px solid #aaa;
+     border-top: 1px solid #aaa;
+     border-right: 1px solid #aaa;
+     border-left: 1px solid #aaa;
+}
+
+.border-radius {
+     border-radius: 50%;
+     border-top-right-radius: 50px;
+     border-top-left-radius: 50px;
+     border-bottom-left-radius: 50px;
+     border-bottom-right-radius: 50px;
+}
+
+.float {
+     float: left;
+     float: right;
+}
+
+.height {
+     height: 0px;
+}
+
+.min-height {
+     height: 0px;
+}
+
+.max-height {
+     height: 0px;
+}
+
+.width {
+     width: 0px;
+}
+
+.max-width {
+     width: 0px;
+}
+
+.min-width {
+     width: 0px;
+}
+
+.margin {
+     margin-top: 0px;
+     margin-right: 0px;
+     margin-bottom: 0px;
+     margin-left: 0px;
+     margin: 0px;
+     /*auto*/
+}
+
+.padding {
+     padding-top: 0px;
+     padding-right: 0px;
+     padding-bottom: 0px;
+     padding-left: 0px;
+     padding: 0px;
+     /*auto*/
+}
+
+.display {
+     /*
+none
+block
+inline
+inline-block
+flex
+
+     */
+     display: none;
+}
+
+.overflow {
+     overflow: visible;
+     overflow: hidden;
+     overflow: auto;
+     overflow-x: scroll;
+     overflow-y: scroll;
+}
+
+.Font {
+     font-style: italic;
+     font-weight: 700;
+     font-size: 20px;
+     line-height: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+}
+
+.direction {
+     direction: rtl;
+     direction: ltr;
+}
+
+.letter-spacing {
+     letter-spacing: 5px;
+}
+
+.text-align {
+     text-align: start;
+     text-align: center;
+     text-align: right;
+     text-align: left;
+}
+
+.text-decoration {
+     text-decoration: line-through;
+     text-decoration: overline;
+     text-decoration: underline;
+}
+
+.text-transform {
+     text-transform: capitalize;
+     text-transform: lowercase;
+}
+
+.list-style {
+     list-style-type: none;
+}
+
+.Animations {
+     animation-name: name;
+     animation-duration: 1s;
+     animation-delay: 0s;
+     animation-iteration-count: infinite;
+}
+
+.transitions {
+     transition: 1s all;
+}
+
+.cursor {
+     cursor: pointer;
+}
+
+.transform {
+     transform: rotate(0deg);
+     transform: translate(0px);
+     transform: skew(0px);
+}
+
+input:focus {
+     color: red;
+}
+
+a:hover {
+     color: red;
+}
+
+a:active {
+     color: red;
+}
+
+.input[type=checkbox]:checked {
+     color: red;
+}
+
+.input::nth-child(1) {
+     color: red;
+}
+
+input:first-child {
+     color: red;
+}
+
+p::first-letter {
+     color: red;
+}
+
+p::after {
+     color: red;
+}
+
+p::before {
+     color: red;
+}
+
+.parent {
+     position: relative;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+}
+
+.child {
+     position: absolute;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+}
+
+.fixed {
+     position: fixed;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+}
+
+.z-index {
+     z-index: 44444;
+}
+
+@keyframes play {
+     0% {
+          color: red;
+     }
+     20% {
+          color: #ffff;
+     }
+     50% {
+          color: #09c;
+     }
+     80% {
+          color: green;
+     }
+     100% {
+          color: blue;
+     }
+}
+
+p:after {
+     contain: '';
+     position: absolute;
+}
+
+p {
+     transition: 1s all;
+     transform: rotate(90deg) scale(1.2) skew(10px) translate(10px 10px);
+     -webkit-transform: rotate(90deg) scale(1.2) skew(10px) translate(10px 10px);
+     -moz-transform: rotate(90deg) scale(1.2) skew(10px) translate(10px 10px);
+     -ms-transform: rotate(90deg) scale(1.2) skew(10px) translate(10px 10px);
+     -o-transform: rotate(90deg) scale(1.2) skew(10px) translate(10px 10px);
+     -webkit-transition: 1s all;
+     -moz-transition: 1s all;
+     -ms-transition: 1s all;
+     -o-transition: 1s all;
+}
+
+@media(min-width:0px)and(max-width:1000px) {
+     p {
+          color: red;
+     }
+}
+
+p>.direct {
+     color: red;
+}

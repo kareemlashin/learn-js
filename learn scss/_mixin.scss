@@ -1,0 +1,28 @@
+// todo @mixin   @include
+
+@mixin borderRadius4($num1,$num2,$num3,$num4){
+     border-radius:$num1 $num2 $num3 $num4;
+   }
+   h2{
+        @include borderRadius4(5px,5px,3px,1px)
+   }
+
+
+
+   @mixin animal {
+     background: gray;
+     border: 1px solid red;
+     font-weight: bold;
+     font-size: 50px;
+     color: red;
+     padding: 20px;
+ }
+ .cat {
+     @include animal;
+     color: white;
+ }
+ .dog {
+     @include animal;
+     color: black;
+ }
+
