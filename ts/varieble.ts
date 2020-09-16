@@ -2,12 +2,12 @@ let isDone: boolean = true;
 let height: number = 6;
 let name: string = "test";
 let list: number[] = [1, 2, 3];
-
+let yy:Array<Number>=[1];
 // Enums.
 enum Color {
-  Red,
-  Green,
-  Blue,
+  Red="dsds",
+  Green="sddsd",
+  Blue="kkkk",
 }
 let c: Color = Color.Green;
 
@@ -21,7 +21,7 @@ function warnUser(): void {
   alert("This is my warning message");
 }
 
-function add(a: number, b: number): number {
+function add(a?: number, b: number=4): number {
   return a + b;
 }
 

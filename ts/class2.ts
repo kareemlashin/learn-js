@@ -1,6 +1,6 @@
 // Private members and class inheritance
 class Type {
-  private type: string | null = null;
+  private type?: string | null = null;
 
   setType = (type: string) => {
     this.type = type;

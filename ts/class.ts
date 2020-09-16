@@ -134,3 +134,6 @@ class SubClazz extends Clazz {
 
 // Following the ES6 spec for classes, subclasses can access superclass static methods.
 SubClazz.method(); //=> "wow, cool".
+let y=()=>{
+
+}

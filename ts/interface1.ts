@@ -1,11 +1,11 @@
 // Simple interface
-interface SimplePerson {
+interface ISimplePerson {
   firstName: string;
 }
 
-const simplePerson: SimplePerson = { firstName: "Robert" };
+const simplePerson: ISimplePerson = { firstName: "Robert" };
 
-const simpleGreet = (simplePerson: SimplePerson) =>
+const simpleGreet = (simplePerson: ISimplePerson) =>
   console.log(`Hello ${simplePerson}!`);
 
 simpleGreet(simplePerson); // Prints: Hello Robert!
