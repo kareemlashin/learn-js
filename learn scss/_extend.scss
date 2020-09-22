@@ -1,22 +1,25 @@
 // todo @extend 
+%defaultIcon {
+    background-image: url('/images/animal.png');
+}
 
-%defaultIcon{
-     background-image: url('/images/animal.png');
- }
- div{
-      @extend %defaultIcon;
- }
+div {
+    @extend %defaultIcon;
+}
 
- %animal {
-     background: gray;
-     // and so on...
- }
- .cat {
-     @extend %animal;
- }
- .dog {
-     @extend .cat ;
- }
-.back{
-     @extend %defaultIcon;
+%animal {
+    background: gray;
+    // and so on...
+}
+
+.cat {
+    @extend %animal;
+}
+
+.dog {
+    @extend .cat;
+}
+
+.back {
+    @extend %defaultIcon;
 }

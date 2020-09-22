@@ -9,8 +9,9 @@ mySet.delete(`5`)
 console.log(mySet.has(`5`))
 console.log(mySet.size)
 
+mySet.array.forEach(element => {
 
-
+});
 
 for (let y of mySet) {
     console.log(`y ${y}`)

@@ -1,7 +1,7 @@
 export class Car {
   engine: string;
 
-  constructor(engine: string) {
+  constructor(engine: string="d s d s  d") {
     this.engine = engine;
   }
   disp(): void {

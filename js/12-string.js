@@ -1,4 +1,3 @@
-
 var str = "Please locate where 'locate' occurs!";
 console.log(`string all : ${str}`);
 
@@ -14,13 +13,13 @@ console.log(`slice  7 to 13 ${slice} start/end`);
 var substring = str.substring(7, 13);
 console.log(`substring 7 to 13  ${substring} start/end`);
 
-var replace = str.replace(/locate/ig, "W3Schools");
+var replace = str.replace(/,/ig, "W3Schools");
 console.log(`replace locate to  W3Schools ${replace}`);
 
-var textToUpperCase = str.toUpperCase();  // text2 is text1 converted to upper
+var textToUpperCase = str.toUpperCase(); // text2 is text1 converted to upper
 console.log(`textToLowerCase ${textToUpperCase}`);
 
-var textToLowerCase = str.toLowerCase();  // text2 is text1 converted to lower
+var textToLowerCase = str.toLowerCase(); // text2 is text1 converted to lower
 console.log(`textToLowerCase ${textToLowerCase}`);
 
 var text2 = "World";
@@ -30,11 +29,11 @@ console.log(str.charAt(0));
 console.log(str.length);
 console.log(str.indexOf('Please'));
 
-const sentence="Hi,I am a Javascript Developer!"
+const sentence = "Hi,I am a Javascript Developer!"
 if (sentence.includes("Javascript")) {
-console.log("Substring Found");
+    console.log("Substring Found");
 } else {
-console.log("Substring not found");
+    console.log("Substring not found");
 }
 
 /*

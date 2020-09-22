@@ -1,14 +1,17 @@
 var newElement = document.getElementById('firstHeading');
-function ok(){
-     alert("ok")
+
+function ok() {
+    alert("ok")
 }
 
 newElement.addEventListener("click", ok);
 
-
+newElement.onclick = () => {
+    alert("ok")
+}
 
 newElement.onclick = function() {
-  console.log('clicked');
+    console.log('clicked');
 };
 
 
@@ -22,5 +25,5 @@ newElement.onclick = function() {
 //onKeyDown   keyDown
 
 window.onload = () => {
-     //window loaded
-   };
+    //window loaded
+};

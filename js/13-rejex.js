@@ -15,6 +15,7 @@ if (nameRegex.test(name)) {
 
 }
 let c = /^[a-51-9]{5,}(010|011|012)abc$/;
+/^[]{}$/
 let y = "dsdd";
 if (c.test(y)) {
     console.log("a7a");

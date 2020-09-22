@@ -18,6 +18,9 @@ $("p:odd") // odd <p> elements
 $(document).ready(function() {
     console.log(`Document Ready`)
 });
+$(document).ready(function() {
+
+});
 $(function() {
     // Short Document Ready
 });
@@ -47,7 +50,7 @@ $(selector).animate({ property: 'value' }, speed, callbackFunction);
 $("#demo").text(); // returns text content
 $("#demo").html(); // returns content, including HTML markup
 $("input").val(); // returns field value
-
+$('ff').reset();
 $("#link").attr("href"); // get an attribute
 $("#link").attr("href", 'https://htmlg.com'); // set attribute
 
@@ -105,7 +108,10 @@ $(window).scroll(function() {
 $("#other").click(function() {
     console.log($('#other').index(this));
 });
+$(selector).click(function(e) {
+    e.preventDefault();
 
+});
 $("li").hover(
     function() {
         $(this).append($("<span> ***</span>"));
@@ -180,3 +186,13 @@ $(window).scroll(function() {
 
     }
 });
+$.ajax({
+    type: "",
+    url: "url",
+    data: "data",
+    dataType: "dataType",
+    success: function(response) {
+
+    }
+});
+$(selector).removeAttr(attributeName);
